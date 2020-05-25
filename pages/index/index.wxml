@@ -4,9 +4,29 @@
 <!-- index nav -->
 <view class="nav_wrap">
   <scroll-view scroll-x="{{true}}" scroll-y="{{false}}" class="nav">
-    <view class="navitem" wx:for="{{navList}}" wx:key="item">
+    <view class="navitem {{index==currentIndex?'navactive':''}} "
+    wx:for="{{navList}}"
+    wx:key="item"
+    bindtap="navactive"
+    data-index="{{index}}"
+    >
         {{item.text}}
     </view>
   </scroll-view>
 </view>
+<!--    swiper-->
+    <view class="slides">
+        <swiper indicator-dots="{{true}}"
+                indicator-active-color="#F85311"
+                autoplay
+                interval="{{2000}}"
+                circular
+        >
+            <swiper-item wx:for="{{swiperList}}" wx:key="item">
+                <navigator>
+                    <image src="{{item.imgSrc}}" mode="widthFix"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
 </view>

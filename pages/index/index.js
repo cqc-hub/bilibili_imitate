@@ -4,8 +4,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navList:[]
-  //  首页导航数据
+    //  首页导航数据
+    navList:[],
+    currentIndex:0,
+    swiperList:[]
+
+  },
+
+  navactive(e){
+    this.setData({
+      currentIndex:e.target.dataset.index
+    })
   },
   //获取导航数据
   getNavList(){
@@ -23,11 +32,27 @@ Page({
       }
     })
   },
+  getSwiperList(){
+    //小程序内置发送请求方法
+    const _this=this
+    wx.request({
+      url:"http://mock-api.com/mnEe4VnJ.mock/swiperList",
+      success(res){
+        if (res.data.code==0){
+          // console.log(res.data.data.swiperList);
+          _this.setData({
+            swiperList:res.data.data.swiperList
+          })
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.getNavList()
+    this.getSwiperList()
   },
 
   /**

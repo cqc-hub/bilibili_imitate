@@ -1,8 +1,28 @@
+page{
+    color: rgba(2, 2, 2, 0.68);
+    padding: 10rpx;
+}
 .nav_wrap{}
 .nav{
     white-space: nowrap;
     padding: 5rpx 0;
 }
 .navitem{
-    padding: 20rpx;
+    padding: 20rpx 45rpx;
+    font-size: 35rpx;
+    display: inline-block;
+}
+.navactive{
+    border-bottom: red solid 5rpx;
+    color: deeppink;
+}
+.slides{
+    margin-top: 10rpx;
+}
+.slides swiper{
+    height: 220rpx;
+}
+.slides navigator,.slides image{
+    width: 100%;
+    height: 100%;
 }
