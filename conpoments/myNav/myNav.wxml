@@ -1,0 +1,12 @@
+<view class="myhead">
+    <navigator class="logo">
+        <image src="../../assets/icons/BILIBILI_LOGO.png" class="logoimg"></image>
+    </navigator>
+    <view class="search">
+        <image src="../../assets/icons/search.png" class="searchimg"></image>
+    </view>
+    <view class="user">
+        <image src="../../assets/icons/bilibili-line.png" class="userimg"></image>
+    </view>
+    <view class="dowmapp">下载 App</view>
+</view>

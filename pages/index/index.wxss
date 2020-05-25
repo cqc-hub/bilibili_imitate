@@ -1,0 +1,8 @@
+.nav_wrap{}
+.nav{
+    white-space: nowrap;
+    padding: 5rpx 0;
+}
+.navitem{
+    padding: 20rpx;
+}

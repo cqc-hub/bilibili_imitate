@@ -1,0 +1,44 @@
+.myhead{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+.logo{
+    flex: 7;
+}
+.logo image{
+    width: 140rpx;
+    height: 60rpx;
+}
+.search{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search image{
+    width: 60rpx;
+    height: 44rpx;
+}
+.user{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user image{
+    width: 54rpx;
+    height: 60rpx;
+}
+.dowmapp{
+    flex: 3;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: white;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}

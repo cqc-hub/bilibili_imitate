@@ -1,0 +1,12 @@
+<view>
+<!-- pub head -->
+    <mynav></mynav>
+<!-- index nav -->
+<view class="nav_wrap">
+  <scroll-view scroll-x="{{true}}" scroll-y="{{false}}" class="nav">
+    <view class="navitem" wx:for="{{navList}}" wx:key="item">
+        {{item.text}}
+    </view>
+  </scroll-view>
+</view>
+</view>
