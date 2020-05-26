@@ -1,0 +1,20 @@
+<view class="videowrap">
+    <navigator class="video_item" wx:for="{{videoList}}" wx:key="item">
+        <view class="view_img">
+<!--            图片-->
+            <image src="{{item.imgSrc}}" class="view_img_img"></image>
+<!--            播放量-->
+            <view class="video_info">
+                <view class="play_count_wrap">
+                    <image src="../../assets/icons/play.png" class="play_count_wrap_image" mode="aspectFill"></image>
+                    <text class="play_count">{{item.playCount}}</text>
+                </view>
+                <view class="comment_count_row">
+                    <image src="../../assets/icons/Comment.png" class="comment_count_row_image"></image>
+                    <text class="comment_count">{{item.commentCount}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="video_title">{{item.desc}}</view>
+    </navigator>
+</view>

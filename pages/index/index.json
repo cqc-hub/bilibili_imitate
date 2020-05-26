@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "mynav": "../../conpoments/myNav/myNav"
+    "mynav": "../../conpoments/myNav/myNav",
+    "videoList": "../../conpoments/videoWrap/videoWrap"
   },
   "navigationBarTitleText": "bilibili"
 }

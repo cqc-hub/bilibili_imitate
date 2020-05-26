@@ -7,7 +7,8 @@ Page({
     //  首页导航数据
     navList:[],
     currentIndex:0,
-    swiperList:[]
+    swiperList:[],
+    videoList:[]
 
   },
 
@@ -16,6 +17,20 @@ Page({
       currentIndex:e.target.dataset.index
     })
   },
+  getVideoList(){
+    const _this=this
+     wx.request({
+       url:"http://mock-api.com/mnEe4VnJ.mock/videoList",
+       success(res){
+         if (res.data.code==0){
+           console.log(res.data.data.videoList);
+           _this.setData({
+             videoList:res.data.data.videoList
+           })
+         }
+       }
+     })
+  },
   //获取导航数据
   getNavList(){
     //小程序内置发送请求方法
@@ -23,7 +38,7 @@ Page({
     wx.request({
       url:"http://mock-api.com/mnEe4VnJ.mock/navList",
       success(res){
-        console.log(res);
+        // console.log(res);
         if (res.data.code==0){
           _this.setData({
             navList:res.data.data.navList
@@ -53,6 +68,7 @@ Page({
   onLoad: function (options) {
     this.getNavList()
     this.getSwiperList()
+    this.getVideoList()
   },
 
   /**
