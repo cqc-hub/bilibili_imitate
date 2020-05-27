@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mynav": "../../conpoments/myNav/myNav",
+    "videoList": "../../conpoments/videoWrap/videoWrap",
+    "recomment": "../../conpoments/recomment/recomment",
+    "myeval": "../../conpoments/myEval/myEval"
+  },
+  "navigationBarTitleText": "视频详情"
+}

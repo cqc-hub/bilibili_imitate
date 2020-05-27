@@ -23,7 +23,7 @@ Page({
        url:"http://mock-api.com/mnEe4VnJ.mock/videoList",
        success(res){
          if (res.data.code==0){
-           console.log(res.data.data.videoList);
+           // console.log(res.data.data.videoList);
            _this.setData({
              videoList:res.data.data.videoList
            })

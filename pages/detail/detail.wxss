@@ -1,0 +1,28 @@
+/* pages/detail/detail.wxss */
+.main{
+    padding: 10rpx;
+    color: #666;
+}
+.videoInfo{
+    margin-top: 10rpx;
+}
+video{
+    width: 100%;
+}
+.video_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+}
+.video_detail{
+    color: black;
+    display: flex;
+}
+.video_detail text{
+    margin-left: 30rpx;
+    font-size: 28rpx;
+}
+.author{}
+.playcounts{}
+.comment{}
+.date{}

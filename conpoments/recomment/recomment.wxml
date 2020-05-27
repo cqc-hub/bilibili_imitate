@@ -1,0 +1,16 @@
+<!--conpoments/recomment/recomment.wxml-->
+<view class="otherlist">
+<navigator class="item_other" wx:for="{{othersList}}" wx:key="index" url="../../pages/detail/detail?id=0">
+        <image class="other_img_wrap"
+                src="{{item.imgSrc}}"
+               mode="widthFix"
+        ></image>
+        <view class="other_info">
+            <view class="other_title">{{item.title}}</view>
+            <view class="other_detail">
+                <text class="play_count">{{item.playMsg}}万次观看</text>
+                <text class="comment_count">{{item.commentCount}}</text>
+            </view>
+        </view>
+</navigator>
+</view>

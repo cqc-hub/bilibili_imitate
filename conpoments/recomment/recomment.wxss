@@ -1,0 +1,36 @@
+/* conpoments/recomment/recomment.wxss */
+.otherlist{
+    border-top: 10rpx solid black;
+    padding-top: 50rpx;
+}
+.item_other{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+    border: 1px solid rgba(0,0,0,.3);
+    position: relative;
+}
+.other_img_wrap{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other_img_wrap image{
+    width: 90%;
+    border-radius: 15rpx;
+}
+.other_info{
+    width: 50%;
+}
+.other_title{
+    color: #5d0c34;
+    font-size: 30rpx;
+    margin-bottom: 30rpx;
+}
+.other_detail{
+    font-size: 30rpx;
+    color: #666;
+    position: absolute;
+    bottom: 10rpx;
+}

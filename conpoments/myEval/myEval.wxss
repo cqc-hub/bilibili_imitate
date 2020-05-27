@@ -1,0 +1,49 @@
+.eval_wrap{
+    margin-top: 20rpx;
+}
+.eval_title{
+    padding: 10rpx;
+    font-size: 30rpx;
+}
+.eval_list{
+
+}
+.eval_item{
+    margin-bottom: 10rpx;
+    padding: 10rpx;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #666;
+}
+.eval_user{
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eval_user image{
+    width: 100%;
+    border-radius: 50%;
+}
+.eval_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 8;
+}
+.eval_detail{
+    display: flex;
+    justify-content: space-between;
+
+}
+.author,.eval_content{
+    color: black;
+    font-size: 30rpx;
+}
+.date{
+    color: #666;
+    font-size: 24rpx;
+}
+.eval_content{
+
+}

@@ -1,5 +1,5 @@
 <view class="videowrap">
-    <navigator class="video_item" wx:for="{{videoList}}" wx:key="item">
+    <navigator class="video_item" wx:for="{{videoList}}" wx:key="item" url="../../pages/detail/detail?id={{item.id}}">
         <view class="view_img">
 <!--            图片-->
             <image src="{{item.imgSrc}}" class="view_img_img"></image>

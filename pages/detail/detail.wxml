@@ -1,0 +1,36 @@
+<!--pages/detail/detail.wxml-->
+<view class="main">
+<mynav></mynav>
+    <view class="videoInfo">
+        <video src="https://vdept.bdstatic.com/316d726252376974766858534a345533/6935706971446442/7714e0264ee06f84c60b9fa746b6591f271739e403ac5759c1fca8599437a4c8bcced515f0fb19b5de33adb4faa39ca9.mp4?auth_key=1590559210-0-0-d7a1a17520d1eb021bbfd899ead412d9"
+               controls="{{true}}"></video>
+        <view class="video_title">
+            <text>{{videoInfo.videoTitle}}</text>
+            <text class="fa fa-angle-down"></text>
+        </view>
+        <view class="video_detail">
+<!--            author-->
+            <text class="author">
+                {{videoInfo.author}}
+            </text>
+<!--            play counts-->
+            <text class="playcounts">
+                {{videoInfo.playCount}}
+            </text>
+<!--            commit-->
+            <text class="comment">
+                {{videoInfo.commentCount}}弹幕
+            </text>
+<!--            time-->
+            <text class="date">
+                {{videoInfo.date}}
+            </text>
+        </view>
+        <view class="recomment">
+            <recomment othersList="{{othersList}}"></recomment>
+        </view>
+        <view>
+            <myeval commentData="{{commentData}}"></myeval>
+        </view>
+    </view>
+</view>

@@ -1,5 +1,5 @@
 <view class="myhead">
-    <navigator class="logo">
+    <navigator class="logo" url="../../pages/index/index">
         <image src="../../assets/icons/BILIBILI_LOGO.png" class="logoimg"></image>
     </navigator>
     <view class="search">

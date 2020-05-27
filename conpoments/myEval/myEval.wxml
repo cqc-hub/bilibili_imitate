@@ -1,0 +1,21 @@
+<view class="eval_wrap">
+    <view class="eval_title">
+        评论({{commentData.commentTotalCount}})
+    </view>
+    <view class="eval_list">
+        <view class="eval_item" wx:for="{{commentData.commentList}}" wx:key="item">
+            <view class="eval_user">
+                <image src="{{item.userIconSrc}}" mode="widthFix"></image>
+            </view>
+            <view class="eval_info">
+                <view class="eval_detail">
+                    <text class="author">{{item.username}}</text>
+                    <text class="date">{{item.commentData}}</text>
+                </view>
+                <view class="eval_content">
+                    {{item.commentInfo}}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
